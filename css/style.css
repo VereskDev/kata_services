@@ -129,7 +129,7 @@ body {
     }
     .showmore{
         display: flex;
-        background:no-repeat left url(/img/expand.svg);
+        background:no-repeat left url(../img/expand.svg);
         margin-left: 24px;
     }
     .showmore-text{
@@ -168,7 +168,7 @@ margin-left: 30px;
     
 }
 .up{
-    background: no-repeat left url(/img/expandtop.svg);
+    background: no-repeat left url(../img/expandtop.svg);
 }
 @media(min-width: 1120px){
     
