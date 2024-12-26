@@ -80,7 +80,7 @@ body {
 .swiper-slide__go{
     width: 40px;
     height: 40px;
-    background: url(/img/go.svg);
+    background: url(../img/go.svg);
 
 }
 
