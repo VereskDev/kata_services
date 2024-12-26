@@ -1,0 +1,335 @@
+.header{
+    border-top:1px solid #D9FFF5;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    margin-bottom: 16px;
+}
+.header-title{
+    font-family: TT Lakes;
+    width: 288px;
+    height: 48px;
+    text-transform: uppercase;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin: 16px;
+color: #7E7E82;
+
+
+}
+body {
+    background: #F8F8F8;
+    font-family: TT lakes;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.menu {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 16px;
+    
+
+  }
+
+.menu__list {
+    display: flex;
+    
+    
+  }
+.menu__item{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    background: #FFFFFF;
+    flex-shrink: 0; 
+    
+    
+}
+.swiper-pagination{
+    position: relative;
+    width: 204px;
+    height: 12px;
+}
+
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+     background: #DDDDDD;
+
+}
+
+.swiper-pagination-bullet-active{
+    background: #B5B6BC;
+}
+
+.swiper-slide__go{
+    width: 40px;
+    height: 40px;
+    background: url(/img/go.svg);
+
+}
+
+.swiper-slide__img{
+    width:108px;
+    height:32px;
+    margin:20px 60px 20px 16px;
+}
+.swiper-slide__img--apple{
+    width:44px;
+    height:44px;
+    margin:12px 108px 16px 16px;
+
+}
+
+.swiper-slide__img--hp{
+    width:52px;
+    height:52px;
+    margin:10px 106px 10px 10px;
+
+}
+
+.showmore{
+    display: none;
+}
+
+
+
+@media(min-width: 320px){
+    .showmore{
+        display: flex;
+    }
+    .grid{
+        display: flex;
+    }
+    .showmore{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+    .header-title{
+        width: 338px;
+    height: 24px;
+    margin-left: 24px;
+    }
+    .showmore{
+        display: flex;
+        background:no-repeat left url(/img/expand.svg);
+        margin-left: 24px;
+    }
+    .showmore-text{
+        font-family: TT Lakes;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-left: 30px;
+
+    }
+    .menu{
+        min-height: 160px;
+    }
+    .menu__list{
+        display: grid;
+        width: 248px;
+        min-height: 300px;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        gap: 16px;
+        overflow-y: visible;
+
+    }
+
+    .swiper-pagination{
+        position: absolute;
+        display: none;
+    }
+
+    .menu--expanded {
+        min-height: 340px; 
+    }
+    
+}
+.up{
+    background: no-repeat left url(/img/expandtop.svg);
+}
+@media(min-width: 1120px){
+    
+    .menu__list{
+        display: grid;
+        width: 248px;
+        min-height: 100px;
+        grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+        gap: 16px;
+        overflow-y: visible;
+
+    }
+
+    .menu--expanded {
+        min-height: 240px; 
+    }
+}
+
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #F8F8F8;
+  font-family: TT lakes;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.header{
+    border-top:1px solid #D9FFF5;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    margin-bottom: 16px;
+
+}
+.header-title{
+    font-family: TT Lakes;
+    width: 288px;
+    height: 48px;
+    text-transform: uppercase;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin: 16px;
+color: #7E7E82;
+
+
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper{
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 100%;
+    height: 110px;
+}
+
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.swiper-pagination-bullet-active{
+    background-color: black;
+}
+
+.swiper-slide-lenovo{
+    width:108px;
+    height:32px;
+    margin:20px 60px 20px 16px;
+    background: url(/img/Bitmap.svg);
+    
+}
+.swiper-slide-go{
+    width: 40px;
+    height: 40px;
+    background: url(/img/go.svg);
+}
+
+swiper-slide {
+  width: 240px;
+  height: 72px;
+}
+
+.swiper-slide-samsa{
+    width:116px;
+    height:38px;
+    margin:16px 36px 16px 16px;
+    background: url(/img/samsa.svg);
+}
+
+.swiper-slide-apple{
+    width:44px;
+    height:44px;
+    margin:12px 124px 16px 16px;
+    background: url(/img/apple.svg);
+
+}
+
+.swiper-slide-ViewSonic{
+    width:128px;
+    height:21px;
+    margin:25px 42px 25px 14px;
+    background: url(/img/view.svg);
+
+}
+
+.swiper-slide-bosch{
+    width:128px;
+    height:29px;
+    margin:21px 40px 21px 16px;
+    background: url(/img/boch.svg);
+
+
+}
+
+.swiper-slide-hp{
+    width:52px;
+    height:52px;
+    margin:10px 122px 10px 10px;
+    background: url(/img/hp.svg);
+
+}
+.swiper-slide-acer{
+    width:94px;
+    height:24px;
+    margin:24px 74px 24px 16px;
+    background: url(/img/abser.svg);
+
+}
+
+.swiper-slide-sony{
+    width:128px;
+    height:26px;
+    margin:23px 42px 23px 14px;
+    background: url(/img/sony.svg);
+
+} */
